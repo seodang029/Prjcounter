@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     var counter = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,6 +33,14 @@ class ViewController: UIViewController {
         lbl1.text = ("\(counter)")
         
     }
-
+    @IBAction func btn3(_ sender: Any) {
+        if sender {
+            view.backgroundColor = UIColor.yellow
+        }
+        else {
+        view.backgroundColor = UIColor.green
+        }
+    }
+    
 }
 
